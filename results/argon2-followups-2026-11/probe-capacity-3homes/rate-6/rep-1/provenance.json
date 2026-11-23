@@ -1,0 +1,517 @@
+{
+  "adapters": {
+    "harness.driver": {
+      "adapter": "harness.driver",
+      "knobs": {
+        "knobs": {},
+        "version": 1
+      },
+      "milestones": {
+        "requested": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        }
+      },
+      "role": "issuer",
+      "tested_against": {},
+      "version": "1"
+    },
+    "holder": {
+      "adapter": "heti.holder",
+      "knobs": {
+        "knobs": {
+          "toad": {
+            "allow_na": false,
+            "description": "Receipts the holder's facet requires.",
+            "type": "int",
+            "unit": ""
+          }
+        },
+        "version": 1
+      },
+      "milestones": {
+        "delivered": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        },
+        "proof_generated": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        },
+        "stored": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        }
+      },
+      "role": "holder",
+      "tested_against": {
+        "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f"
+      },
+      "version": "2"
+    },
+    "issuer": {
+      "adapter": "imbu.issuer",
+      "knobs": {
+        "knobs": {
+          "answer_burst": {
+            "allow_na": false,
+            "description": "Signed answers each controller may hold unspent.",
+            "type": "int",
+            "unit": ""
+          },
+          "answer_rate": {
+            "allow_na": false,
+            "description": "Signed answers each controller regains a second (imbu's answer budget).",
+            "type": "float",
+            "unit": "/s"
+          },
+          "clients": {
+            "allow_na": false,
+            "description": "How many controllers each home serves, each with its own key and connection pool.",
+            "type": "int",
+            "unit": ""
+          },
+          "homes": {
+            "allow_na": false,
+            "description": "How many imbu issuers, each its own home and process, share the deployment (this.i 2lkqz9mq).",
+            "type": "int",
+            "unit": ""
+          },
+          "operation_timeout_s": {
+            "allow_na": false,
+            "description": "How long an operation may run before the adapter gives up on it.",
+            "type": "float",
+            "unit": "s"
+          },
+          "poll_ms": {
+            "allow_na": true,
+            "description": "How often the adapter reads an operation until it finishes; the milestone times come from imbu, not from this poll. n/a when the adapter waits instead.",
+            "type": "float",
+            "unit": "ms"
+          },
+          "signer": {
+            "allow_na": false,
+            "description": "lockbox: the principal's keys are in the lockbox; external: heti's ThrottledSigner holds them (this.i 2p26rn9h).",
+            "type": "str",
+            "unit": ""
+          },
+          "signer_latency_ms": {
+            "allow_na": true,
+            "description": "The external signer's latency per operation.",
+            "type": "float",
+            "unit": "ms"
+          },
+          "signer_rate": {
+            "allow_na": true,
+            "description": "The external signer's cap on operation starts per second.",
+            "type": "float",
+            "unit": "/s"
+          },
+          "toad": {
+            "allow_na": false,
+            "description": "Witness receipts imbu requires before an event is settled.",
+            "type": "int",
+            "unit": ""
+          },
+          "wait_s": {
+            "allow_na": true,
+            "description": "Prefer: wait sent on each request and operation read, so imbu answers once the operation settles; n/a when the adapter polls.",
+            "type": "float",
+            "unit": "s"
+          }
+        },
+        "version": 4
+      },
+      "milestones": {
+        "accepted": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "anchored": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "constructed": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "published": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "registry_updated": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "revocation_anchored": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "revocation_published": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "revocation_requested": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        },
+        "revocation_witnessed": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        },
+        "witnessed": {
+          "clock": "realtime",
+          "method": "reported",
+          "resolution_ns": 1000
+        }
+      },
+      "role": "issuer",
+      "tested_against": {
+        "imbu": "7b544acee1a91b182ea671c3432155529483fc6a"
+      },
+      "version": "6"
+    },
+    "state_distribution": {
+      "adapter": "registrar.state_distribution",
+      "knobs": {
+        "knobs": {
+          "delivery_timeout_s": {
+            "allow_na": false,
+            "description": "How long the Registrar waits on a subscriber.",
+            "type": "float",
+            "unit": "s"
+          },
+          "resync_s": {
+            "allow_na": false,
+            "description": "How often the Observer resynchronizes; must exceed the window.",
+            "type": "float",
+            "unit": "s"
+          },
+          "window_s": {
+            "allow_na": false,
+            "description": "The Registrar's batching window.",
+            "type": "float",
+            "unit": "s"
+          }
+        },
+        "version": 1
+      },
+      "milestones": {},
+      "role": "state_distribution",
+      "tested_against": {
+        "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f",
+        "witness": "9c8e673036cccb21f90f13d807b2969d0d440d42"
+      },
+      "version": "2"
+    },
+    "verifier": {
+      "adapter": "heti.verifier",
+      "knobs": {
+        "knobs": {
+          "deadline_s": {
+            "allow_na": false,
+            "description": "How long verification is retried before the credential counts as not verified.",
+            "type": "float",
+            "unit": "s"
+          },
+          "freshness_s": {
+            "allow_na": false,
+            "description": "How old the Observer's state may be before the verifier refuses to rely on it.",
+            "type": "float",
+            "unit": "s"
+          },
+          "retry_ms": {
+            "allow_na": false,
+            "description": "How soon a refused verification is tried again.",
+            "type": "float",
+            "unit": "ms"
+          },
+          "toad": {
+            "allow_na": false,
+            "description": "Receipts the verifier's facet requires.",
+            "type": "int",
+            "unit": ""
+          }
+        },
+        "version": 1
+      },
+      "milestones": {
+        "sync_full_done": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        },
+        "sync_full_started": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        },
+        "verified": {
+          "clock": "harness",
+          "method": "observed",
+          "resolution_ns": 1
+        }
+      },
+      "role": "verifier",
+      "tested_against": {
+        "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f"
+      },
+      "version": "2"
+    },
+    "witness_pool": {
+      "adapter": "heti.witness_pool",
+      "knobs": {
+        "knobs": {
+          "count": {
+            "allow_na": false,
+            "description": "How many witnesses the pool runs.",
+            "type": "int",
+            "unit": ""
+          }
+        },
+        "version": 1
+      },
+      "milestones": {},
+      "role": "witness_pool",
+      "tested_against": {
+        "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f"
+      },
+      "version": "2"
+    }
+  },
+  "calibration": {
+    "budget": {
+      "anchored->witnessed": {
+        "p50_error_ns": 175509,
+        "p99_error_ns": 220084
+      },
+      "constructed->registry_updated": {
+        "p50_error_ns": 202016,
+        "p99_error_ns": 226750
+      },
+      "delivered->stored": {
+        "p50_error_ns": 1262779,
+        "p99_error_ns": 1400939
+      },
+      "proof_generated->verified": {
+        "p50_error_ns": 1412994,
+        "p99_error_ns": 1457046
+      },
+      "registry_updated->anchored": {
+        "p50_error_ns": 243536,
+        "p99_error_ns": 135474
+      },
+      "revocation_anchored->revocation_witnessed": {
+        "p50_error_ns": 185539,
+        "p99_error_ns": 183842
+      },
+      "revocation_requested->revocation_anchored": {
+        "p50_error_ns": 1807344,
+        "p99_error_ns": 1807864
+      },
+      "revocation_witnessed->revocation_published": {
+        "p50_error_ns": 602847,
+        "p99_error_ns": 191989
+      },
+      "stored->proof_generated": {
+        "p50_error_ns": 1605166,
+        "p99_error_ns": 1905702
+      },
+      "witnessed->published": {
+        "p50_error_ns": 615921,
+        "p99_error_ns": 528792
+      }
+    },
+    "gate": "strict",
+    "harness_commit": "22f483e0dc477001c3614d8ecec9cae5a64d6447",
+    "ok": true,
+    "path": "/home/daniel/code/bakobo/keri-bench/.ignored/night-2026-11-21/work/calibration/calibration.json",
+    "saturation_relative_error": 0.004001137131427868
+  },
+  "clocks": {
+    "harness": "monotonic@3465cb2e-b867-4b34-9b21-a6e6fddd066d",
+    "realtime": "realtime@kelun"
+  },
+  "components": {
+    "holder": {
+      "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f"
+    },
+    "issuer": {
+      "imbu": "7b544acee1a91b182ea671c3432155529483fc6a"
+    },
+    "state_distribution": {
+      "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f",
+      "witness": "9c8e673036cccb21f90f13d807b2969d0d440d42"
+    },
+    "verifier": {
+      "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f"
+    },
+    "witness_pool": {
+      "heti": "093acb35de0a1a8c2b99296645274cd8c0e9b06f"
+    }
+  },
+  "harness_commit": "22f483e0dc477001c3614d8ecec9cae5a64d6447",
+  "host": {
+    "boot_id": "3465cb2e-b867-4b34-9b21-a6e6fddd066d",
+    "cpu_count": 8,
+    "cpu_model": "Intel Core Processor (Haswell, no TSX)",
+    "hostname": "kelun",
+    "kernel": "7.0.0-43-generic",
+    "machine": "x86_64",
+    "memory_bytes": 24598085632,
+    "python": "3.14.6"
+  },
+  "knobs": {
+    "holder": {
+      "toad": 2
+    },
+    "issuer": {
+      "answer_burst": 20,
+      "answer_rate": 2.0,
+      "clients": 4,
+      "homes": 3,
+      "operation_timeout_s": 60.0,
+      "poll_ms": "n/a",
+      "signer": "lockbox",
+      "signer_latency_ms": "n/a",
+      "signer_rate": "n/a",
+      "toad": 2,
+      "wait_s": 25.0
+    },
+    "state_distribution": {
+      "delivery_timeout_s": 450.0,
+      "resync_s": 2700.0,
+      "window_s": 900.0
+    },
+    "verifier": {
+      "deadline_s": 1200.0,
+      "freshness_s": 900.0,
+      "retry_ms": 5000.0,
+      "toad": 2
+    },
+    "witness_pool": {
+      "count": 3
+    }
+  },
+  "measurement_cost": {
+    "harness_cpu_s": 59.979117,
+    "links": {
+      "holder.api": {
+        "exchanges": 0,
+        "p50_ns": 215742,
+        "p99_ns": 367886,
+        "samples": 200
+      },
+      "issuer.control.0": {
+        "exchanges": 121,
+        "p50_ns": 186679,
+        "p99_ns": 372157,
+        "samples": 200
+      },
+      "issuer.control.1": {
+        "exchanges": 121,
+        "p50_ns": 240699,
+        "p99_ns": 435444,
+        "samples": 200
+      },
+      "issuer.control.2": {
+        "exchanges": 121,
+        "p50_ns": 194627,
+        "p99_ns": 360870,
+        "samples": 200
+      },
+      "state_distribution.observer": {
+        "exchanges": 0,
+        "p50_ns": 188442,
+        "p99_ns": 355653,
+        "samples": 200
+      },
+      "state_distribution.registrar": {
+        "exchanges": 362,
+        "p50_ns": 198084,
+        "p99_ns": 395848,
+        "samples": 200
+      },
+      "verifier.api": {
+        "exchanges": 0,
+        "p50_ns": 178461,
+        "p99_ns": 291943,
+        "samples": 200
+      },
+      "witness_pool.w0": {
+        "exchanges": 768,
+        "p50_ns": 305553,
+        "p99_ns": 529352,
+        "samples": 200
+      },
+      "witness_pool.w1": {
+        "exchanges": 765,
+        "p50_ns": 209526,
+        "p99_ns": 447938,
+        "samples": 200
+      },
+      "witness_pool.w2": {
+        "exchanges": 755,
+        "p50_ns": 183971,
+        "p99_ns": 337699,
+        "samples": 200
+      }
+    }
+  },
+  "provenance_schema": 1,
+  "run": {
+    "duration_s": 60.0,
+    "host_load": {
+      "before": [
+        4.39,
+        4.49,
+        4.19
+      ],
+      "end": [
+        4.44,
+        4.44,
+        4.19
+      ],
+      "window": [
+        3.49,
+        4.27,
+        4.13
+      ]
+    },
+    "kind": "single-host, application-boundary faults (this.i 0wcr2rrj)",
+    "lag_limit_ms": 25.0,
+    "measure": [
+      "requested",
+      "witnessed"
+    ],
+    "rate": 6.0,
+    "repetition": 1,
+    "scenario": "probe-capacity-3homes",
+    "soak": {
+      "bucket": 50,
+      "per_credentials": 1000,
+      "sample_s": 30.0,
+      "stop_credentials": null
+    },
+    "stages": [
+      "issue"
+    ],
+    "warmup_s": 10.0
+  },
+  "scenario": "# Today's imbu against Utah's stated targets (bench-targets). Needs `uv sync --extra stacks`.\n# Every size here is a choice recorded in this.i under 4j5395l8 and its children.\nscenario_schema = 1\nname = \"probe-capacity-3homes\"\ndescription = \"Probe: issuance only at 3 home(s), 4 clients each, waiting client, deployed Registrar window.\"\nstages = [\"issue\"]\n\n[load]\nrates = [2.8, 4.0, 5.0]\nduration_s = 60.0\nwarmup_s = 10.0\ndrain_s = 120.0\nrepetitions = 3\nmeasure = [\"requested\", \"witnessed\"]\n\n[statistics]\nlag_limit_ms = 25.0\n\n[soak]\nbucket = 50\nper_credentials = 1000\nsample_s = 30.0\n\n[roles.witness_pool]\nadapter = \"heti.witness_pool\"\n[roles.witness_pool.knobs]\nknob_schema = 1\ncount = 3\n\n[roles.state_distribution]\nadapter = \"registrar.state_distribution\"\n[roles.state_distribution.knobs]\nknob_schema = 1\nwindow_s = 900.0\ndelivery_timeout_s = 450.0\nresync_s = 2700.0\n\n[roles.issuer]\nadapter = \"imbu.issuer\"\n[roles.issuer.knobs]\nknob_schema = 4\ntoad = 2\npoll_ms = \"n/a\"\nwait_s = 25.0\nanswer_rate = 2.0\nanswer_burst = 20\noperation_timeout_s = 60.0\nhomes = 3\nclients = 4\nsigner = \"lockbox\"\nsigner_latency_ms = \"n/a\"\nsigner_rate = \"n/a\"\n\n[roles.holder]\nadapter = \"heti.holder\"\n[roles.holder.knobs]\nknob_schema = 1\ntoad = 2\n\n[roles.verifier]\nadapter = \"heti.verifier\"\n[roles.verifier.knobs]\nknob_schema = 1\ntoad = 2\nfreshness_s = 900.0\nretry_ms = 5000.0\ndeadline_s = 1200.0\n",
+  "scenario_sha256": "134b66a4fe9a540b130123054313ca96ef9af70ee8a5282ef9f9fdf57ac3b137",
+  "unexpected_exits": []
+}

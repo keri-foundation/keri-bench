@@ -1,0 +1,11 @@
+{
+ "homes": [
+  {
+   "home": 0,
+   "signed": 301,
+   "refused_budget": 0,
+   "refused_saturated": 0,
+   "issuances": 300
+  }
+ ]
+}

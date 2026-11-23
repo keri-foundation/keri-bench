@@ -1,0 +1,41 @@
+2026-11-21T00:05:00-07:00 kelun systemd[1535]: Started keri-bench-night.service - [systemd-run] /home/daniel/code/bakobo/keri-bench/.ignored/night-runs-2026-11-21.sh.
+2026-11-21T00:05:00-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:05:00Z waiting for the bench-host lock
+2026-11-21T00:05:00-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:05:00Z lock held
+2026-11-21T00:05:00-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:05:00Z quiet at load 0.71
+2026-11-21T00:06:35-07:00 kelun night-runs-2026-11-21.sh[3326062]: {"ok": true, "saturation": {"ok": true, "cap": 50.0, "achieved_at_saturation": 50.20005685657139, "offered": 70.0, "relative_error": 0.004001137131427868}}
+2026-11-21T00:06:35-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:06:35Z start probe-capacity-1home at 5.0
+2026-11-21T00:07:56-07:00 kelun night-runs-2026-11-21.sh[3329285]: {"refused": false}
+2026-11-21T00:07:56-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:07:56Z end probe-capacity-1home at 5.0
+2026-11-21T00:07:56-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:07:56Z start probe-capacity-1home at 6.0
+2026-11-21T00:09:26-07:00 kelun night-runs-2026-11-21.sh[3332094]: {"refused": false}
+2026-11-21T00:09:26-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:09:26Z end probe-capacity-1home at 6.0
+2026-11-21T00:09:26-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:09:26Z start probe-capacity-1home at 8.0
+2026-11-21T00:11:00-07:00 kelun night-runs-2026-11-21.sh[3337325]: {"refused": false}
+2026-11-21T00:11:00-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:11:00Z end probe-capacity-1home at 8.0
+2026-11-21T00:11:00-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:11:00Z start probe-capacity-3homes at 2.8
+2026-11-21T00:12:22-07:00 kelun night-runs-2026-11-21.sh[3341169]: {"refused": false}
+2026-11-21T00:12:22-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:12:22Z end probe-capacity-3homes at 2.8
+2026-11-21T00:12:22-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:12:22Z start probe-capacity-3homes at 4.0
+2026-11-21T00:13:43-07:00 kelun night-runs-2026-11-21.sh[3345163]: {"refused": false}
+2026-11-21T00:13:43-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:13:43Z end probe-capacity-3homes at 4.0
+2026-11-21T00:13:43-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:13:43Z start probe-capacity-3homes at 5.0
+2026-11-21T00:15:05-07:00 kelun night-runs-2026-11-21.sh[3347841]: {"refused": false}
+2026-11-21T00:15:05-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:15:05Z end probe-capacity-3homes at 5.0
+2026-11-21T00:15:05-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:15:05Z start probe-capacity-3homes at 6.0
+2026-11-21T00:16:26-07:00 kelun night-runs-2026-11-21.sh[3350137]: {"refused": false}
+2026-11-21T00:16:27-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:16:27Z end probe-capacity-3homes at 6.0
+2026-11-21T00:16:27-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:16:27Z start probe-capacity-3homes at 8.0
+2026-11-21T00:17:48-07:00 kelun night-runs-2026-11-21.sh[3352220]: {"refused": false}
+2026-11-21T00:17:48-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:17:48Z end probe-capacity-3homes at 8.0
+2026-11-21T00:17:48-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:17:48Z start probe-capacity-3homes at 12.0
+2026-11-21T00:19:10-07:00 kelun night-runs-2026-11-21.sh[3355226]: {"refused": false}
+2026-11-21T00:19:10-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:19:10Z end probe-capacity-3homes at 12.0
+2026-11-21T00:19:10-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:19:10Z start peak-hour-1home at 2.8
+2026-11-21T00:29:26-07:00 kelun night-runs-2026-11-21.sh[3357500]: {"refused": false}
+2026-11-21T00:29:26-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:29:26Z end peak-hour-1home at 2.8
+2026-11-21T00:29:26-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T07:29:26Z start peak-hour-1home-hour at 2.8
+2026-11-21T01:46:31-07:00 kelun night-runs-2026-11-21.sh[3377064]: {"refused": false}
+2026-11-21T01:46:32-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T08:46:32Z end peak-hour-1home-hour at 2.8
+2026-11-21T01:46:32-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T08:46:32Z collected into /home/daniel/code/bakobo/keri-bench/.ignored/night-2026-11-21/results
+2026-11-21T01:46:32-07:00 kelun night-runs-2026-11-21.sh[3326027]: 2026-11-21T08:46:32Z all done, none failed
+2026-11-21T01:46:32-07:00 kelun systemd[1535]: keri-bench-night.service: Consumed 4h 28min 52.932s CPU time over 1h 41min 32.335s wall clock time, 2.2G memory peak.

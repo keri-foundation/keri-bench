@@ -9,7 +9,7 @@ A measurement instrument for end-to-end KERI+ACDC issuance on any implementation
 The runs are read in the write-ups, each of which states what was measured, on which versions, and what it showed:
 
 - [Against Utah's targets: the rerun, November 2026](docs/targets-2026-10-rerun.md) has the most recent verdicts on Utah's targets for volume, stock, revocation, crash recovery and HSM sizing.
-- [One issuer after the argon2 fix, November 2026](docs/argon2-2026-11.md) measures one issuer's capacity before and after heti stopped paying argon2 twice per credential: from about 1.5 a second to more than 4.
+- [One issuer after the argon2 fix, November 2026](docs/argon2-2026-11.md) measures one issuer's capacity before and after heti stopped paying argon2 twice per credential: from about 1.5 a second to between 5 and 6, with three issuers past 12 and one issuer's full peak hour stalling at each Registrar window.
 - [Stock and witness outage, November 2026](docs/stock-2026-11.md) fills a single issuer to 40,000 credentials and takes a witness down for 25 minutes.
 - [Against Utah's targets, October 2026](docs/targets-2026-10.md) is the first measurement against those targets, before the fixes it led to.
 - [Baseline, October 2026](docs/baseline-2026-10.md) and [its second part](docs/baseline-2026-10-part2.md) measured the stack before Utah had given targets, including how many signatures a credential costs an HSM.

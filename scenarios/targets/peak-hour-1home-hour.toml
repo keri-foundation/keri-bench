@@ -1,0 +1,77 @@
+# Today's imbu against Utah's stated targets (bench-targets). Needs `uv sync --extra stacks`.
+# Every size here is peak-hour-3homes's except homes (this.i 3s6zgux4).
+scenario_schema = 1
+name = "peak-hour-1home-hour"
+description = "Targets 1 and 3: 2.8 a second at one issuer until 10,000 credentials are witnessed or the hour ends; every 101st credential is delivered, verified and revoked (this.i 3s6zgux4)."
+stages = ["issue", "deliver", "present", "verify", "revoke"]
+
+[recognition]
+poll_ms = 10000.0
+stable_polls = 2
+
+[lifecycle]
+full_every = 101
+
+[load]
+rates = [2.8]
+duration_s = 3600.0
+warmup_s = 0.0
+drain_s = 2400.0
+repetitions = 3
+measure = ["requested", "witnessed"]
+
+[statistics]
+lag_limit_ms = 25.0
+
+[soak]
+bucket = 200
+per_credentials = 1000
+sample_s = 60.0
+
+[stop]
+credentials = 10000
+
+[roles.witness_pool]
+adapter = "heti.witness_pool"
+[roles.witness_pool.knobs]
+knob_schema = 1
+count = 3
+
+[roles.state_distribution]
+adapter = "registrar.state_distribution"
+[roles.state_distribution.knobs]
+knob_schema = 1
+window_s = 900.0
+delivery_timeout_s = 450.0
+resync_s = 2700.0
+
+[roles.issuer]
+adapter = "imbu.issuer"
+[roles.issuer.knobs]
+knob_schema = 4
+toad = 2
+poll_ms = "n/a"
+wait_s = 25.0
+answer_rate = 2.0
+answer_burst = 20
+operation_timeout_s = 60.0
+homes = 1
+clients = 4
+signer = "lockbox"
+signer_latency_ms = "n/a"
+signer_rate = "n/a"
+
+[roles.holder]
+adapter = "heti.holder"
+[roles.holder.knobs]
+knob_schema = 1
+toad = 2
+
+[roles.verifier]
+adapter = "heti.verifier"
+[roles.verifier.knobs]
+knob_schema = 1
+toad = 2
+freshness_s = 900.0
+retry_ms = 5000.0
+deadline_s = 1200.0

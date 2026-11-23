@@ -1,0 +1,25 @@
+{
+ "homes": [
+  {
+   "home": 0,
+   "signed": 81,
+   "refused_budget": 0,
+   "refused_saturated": 0,
+   "issuances": 80
+  },
+  {
+   "home": 1,
+   "signed": 81,
+   "refused_budget": 0,
+   "refused_saturated": 0,
+   "issuances": 80
+  },
+  {
+   "home": 2,
+   "signed": 81,
+   "refused_budget": 0,
+   "refused_saturated": 0,
+   "issuances": 80
+  }
+ ]
+}
