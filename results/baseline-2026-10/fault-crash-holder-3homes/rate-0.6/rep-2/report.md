@@ -10,7 +10,7 @@ A crash on holder was injected; it was ready again 995 ms after it began, and th
 Checked afterwards, of 36 credential(s): 34 done, 1 resumed, 1 lost.
 There is 1 warning, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

@@ -9,7 +9,7 @@ From request to `witnessed`, the median credential took 360 ms and 1 in 100 took
 A crash on issuer was injected; it was ready again 9.40 s after it began, and the next credential succeeded 2.31 s after that.
 There are 2 warnings, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

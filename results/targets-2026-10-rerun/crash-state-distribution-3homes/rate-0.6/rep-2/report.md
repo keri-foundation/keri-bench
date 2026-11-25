@@ -10,7 +10,7 @@ A crash on state_distribution was injected; it was ready again 2.71 s after it b
 Checked afterwards, of 36 credential(s): 32 done, 4 resumed, 0 lost.
 There are no warnings.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

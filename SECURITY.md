@@ -28,7 +28,7 @@ Bakobo is a small company. These are commitments about *responsiveness*, not a g
 keri-bench is a measurement harness that an operator runs on a machine they control, against a stack they deploy for the purpose. It is not a service, and it holds no credentials of anyone else's. What is ours:
 
 - the harness itself, `src/keri_bench/`: its driver, fault proxy, process control, timeline and report code, and the synthetic stack it calibrates against;
-- the documentation site's build, `tools/site_source.py` and `scripts/site-source`, which publishes committed results to <https://bakobo.github.io/keri-bench/>;
+- the documentation site's build, `tools/site_source.py` and `scripts/site-source`, which publishes committed results to <https://keri-foundation.github.io/keri-bench/>;
 - this repository's GitHub Actions workflows.
 
 Examples of what we want to hear about: a scenario, timeline or provenance file that makes the harness run code or write outside its output directory; a committed result that makes the site publish active content; a workflow that exposes a token or runs untrusted code with write permissions.

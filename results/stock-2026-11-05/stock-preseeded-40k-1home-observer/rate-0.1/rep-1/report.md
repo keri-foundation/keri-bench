@@ -10,7 +10,7 @@ A crash on state_distribution.observer was injected; it was ready again 1.70 s a
 A crash on issuer was injected; it was ready again 32.0 s after it began, and the next credential succeeded 36.2 s after that.
 There is 1 warning, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

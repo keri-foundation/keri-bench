@@ -8,7 +8,7 @@ From request to `published`, the median credential took 9.52 s and 1 in 100 took
 `published` was reached 0.189 times a second against 0.200 offered, 95% of the offered load.
 There is 1 warning, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

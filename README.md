@@ -1,6 +1,6 @@
 # keri-bench
 
-[![CI](https://github.com/bakobo/keri-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/bakobo/keri-bench/actions/workflows/ci.yml)
+[![CI](https://github.com/keri-foundation/keri-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/keri-foundation/keri-bench/actions/workflows/ci.yml)
 
 A measurement instrument for end-to-end KERI+ACDC issuance on any implementation: the State of Utah's KERI-006 (load and soak tests covering throughput, persistence, concurrency, restart recovery, witnessing, TEL replay and wallet delivery). It drives a stack open-loop through per-role adapters, puts a fault proxy in front of every link, and writes a raw timeline from which every reported number can be recomputed. Why it is built this way is in [`this.i`](this.i); what it measures and how its own correctness is tested is in [`docs/test-plan.md`](docs/test-plan.md).
 
@@ -16,14 +16,14 @@ The runs are read in the write-ups, each of which states what was measured, on w
 
 The [glossary](docs/glossary.md) defines the terms these pages use, and [reading a run report](docs/reading-a-report.md) explains the raw per-run reports the write-ups cite as evidence.
 
-All of this, with every committed run's report, is published at <https://bakobo.github.io/keri-bench/>; [`docs/site.md`](docs/site.md) says how the site is built.
+All of this, with every committed run's report, is published at <https://keri-foundation.github.io/keri-bench/>; [`docs/site.md`](docs/site.md) says how the site is built.
 
 ## From a fresh clone to passing tests
 
 You need Linux (the harness names its clock by the kernel's boot id), [uv](https://docs.astral.sh/uv/), and nothing else; uv fetches Python 3.14.
 
 ```
-git clone https://github.com/bakobo/keri-bench && cd keri-bench
+git clone https://github.com/keri-foundation/keri-bench && cd keri-bench
 uv sync
 uv run pytest
 ```

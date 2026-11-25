@@ -8,7 +8,7 @@ From request to `constructed`, the median credential took 5.07 ms and 1 in 100 t
 `constructed` was reached 30.0 times a second against 30.0 offered, 100% of the offered load.
 There are 3 warnings, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

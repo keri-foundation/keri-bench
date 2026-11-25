@@ -9,7 +9,7 @@ From request to `constructed`, the median credential took 1.49 ms and 1 in 100 t
 Checked afterwards, of 105 credential(s): 105 done, 0 resumed, 0 lost.
 There are 3 warnings, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

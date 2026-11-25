@@ -7,7 +7,7 @@ Before a large change, open an issue and describe what you want to do. Small fix
 ## Getting to passing tests
 
 ```sh
-git clone https://github.com/bakobo/keri-bench && cd keri-bench
+git clone https://github.com/keri-foundation/keri-bench && cd keri-bench
 uv sync
 uv run pytest
 ```

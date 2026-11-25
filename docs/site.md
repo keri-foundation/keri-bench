@@ -1,6 +1,6 @@
 # The documentation site
 
-keri-bench's documentation, its write-ups and every committed run's report are published at <https://bakobo.github.io/keri-bench/>. The site is built the same way as the [KERI conformance suite's](https://bakobo.github.io/keri-conformance-suite/) and the [KERI privacy analysis suite's](https://bakobo.github.io/keri-priv-analysis-suite/), with the same theme, so the three read as one family (`this.i` 2j423x8t).
+keri-bench's documentation, its write-ups and every committed run's report are published at <https://keri-foundation.github.io/keri-bench/>. The site is built the same way as the [KERI conformance suite's](https://keri-foundation.github.io/keri-conformance-suite/) and the [KERI privacy analysis suite's](https://keri-foundation.github.io/keri-priv-analysis-suite/), with the same theme, so the three read as one family (`this.i` 2j423x8t).
 
 ## What it publishes
 

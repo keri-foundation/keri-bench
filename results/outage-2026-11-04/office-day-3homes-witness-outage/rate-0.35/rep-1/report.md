@@ -11,7 +11,7 @@ Checked afterwards, of 3150 credential(s): 24 done, 8 resumed, 3118 lost.
 Only every 101st credential was taken past issuance in this run, so 3118 of the credentials counted as lost were never shown to the verifier, and reconciliation counts them lost whether or not their issuance succeeded (the Warnings section lists any stage that failed); none of those taken through the whole lifecycle was lost.
 There are no warnings.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 

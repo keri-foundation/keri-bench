@@ -89,7 +89,7 @@ The words these pages use without stopping to explain them. KERI's own terms fol
 
 | term | meaning |
 |---|---|
-| `this.i` and its ids | The repository's record of its design decisions and the reasons for them. An id such as `0hykugwr` names one decision; its text is in [`this.i`](https://github.com/bakobo/keri-bench/blob/main/this.i) and can be found there by searching for the id. |
+| `this.i` and its ids | The repository's record of its design decisions and the reasons for them. An id such as `0hykugwr` names one decision; its text is in [`this.i`](https://github.com/keri-foundation/keri-bench/blob/main/this.i) and can be found there by searching for the id. |
 | Commit hashes | Short hexadecimal strings such as `imbu 670a3d8` or `heti a830fcd` name the exact version of a component that was measured, so a run can be repeated on the same code. |
 | Error codes | Codes such as `e.party.imbu.refused.f` are a component's own name for a failure. The last letter says whether retrying could help: `r` retryable, `f` final. |
 | `@` ids | Ids such as `@7qgv63f5` are cross-references into other Bakobo repositories' design records. |

@@ -902,7 +902,7 @@ def _summary_md(report: dict) -> list[str]:
                  f"listed at the end.")
     lines += ["", ("Durations are rounded to three significant figures; the run's `report.json` "
                    "keeps them in nanoseconds. [Reading a run report]"
-                   "(https://bakobo.github.io/keri-bench/reading-a-report/) explains each "
+                   "(https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each "
                    "section."), ""]
     return lines
 

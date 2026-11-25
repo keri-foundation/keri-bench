@@ -13,9 +13,9 @@
 [project]
 site_name = "keri-bench"
 site_description = "Load, soak and fault measurements of end-to-end KERI+ACDC issuance, on any implementation."
-site_url = "https://bakobo.github.io/keri-bench/"
-repo_url = "https://github.com/bakobo/keri-bench"
-repo_name = "bakobo/keri-bench"
+site_url = "https://keri-foundation.github.io/keri-bench/"
+repo_url = "https://github.com/keri-foundation/keri-bench"
+repo_name = "keri-foundation/keri-bench"
 docs_dir = "_site/src"
 # Colours taken from keri.one, as on the other suites' sites; the stylesheet says which.
 extra_css = ["stylesheets/kb.css"]

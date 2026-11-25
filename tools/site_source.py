@@ -43,7 +43,7 @@ import markdown
 from keri_bench.errors import BenchError
 from tools import glossary
 
-REPO_URL = "https://github.com/bakobo/keri-bench"
+REPO_URL = "https://github.com/keri-foundation/keri-bench"
 MARKER = ".kb-site-source"
 RESULTS_DIR = "results"
 # The results files the site carries. Everything else under results/ (timelines, provenance,

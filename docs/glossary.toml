@@ -317,7 +317,7 @@ title = "Reading the citations"
 
 [[section.term]]
 name = "`this.i` and its ids"
-meaning = "The repository's record of its design decisions and the reasons for them. An id such as `0hykugwr` names one decision; its text is in [`this.i`](https://github.com/bakobo/keri-bench/blob/main/this.i) and can be found there by searching for the id."
+meaning = "The repository's record of its design decisions and the reasons for them. An id such as `0hykugwr` names one decision; its text is in [`this.i`](https://github.com/keri-foundation/keri-bench/blob/main/this.i) and can be found there by searching for the id."
 
 [[section.term]]
 name = "Commit hashes"

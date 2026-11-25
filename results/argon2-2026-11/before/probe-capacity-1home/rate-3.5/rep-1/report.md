@@ -8,7 +8,7 @@ From request to `witnessed`, the median credential took 33.4 s and 1 in 100 took
 `witnessed` was reached 1.45 times a second against 3.50 offered, 41% of the offered load.
 There is 1 warning, listed at the end.
 
-Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://bakobo.github.io/keri-bench/reading-a-report/) explains each section.
+Durations are rounded to three significant figures; the run's `report.json` keeps them in nanoseconds. [Reading a run report](https://keri-foundation.github.io/keri-bench/reading-a-report/) explains each section.
 
 ## Provenance
 
